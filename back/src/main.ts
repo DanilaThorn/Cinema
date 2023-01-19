@@ -8,7 +8,7 @@ async function bootstrap() {
   const port = config.get<number>('API_PORT');
   app.setGlobalPrefix('api');
   await app.listen(port | 7000, () =>
-    console.log(`App started ${port || 7000} port`),
+    console.log(`App started ${port || 7000} port`)
   );
 }
 
